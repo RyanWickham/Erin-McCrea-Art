@@ -1,18 +1,20 @@
 import '../../index.css';
 
+import { NavLink } from 'react-router-dom';
+
 export default function LeftNavbar() {
     return(
         <div className="left-menu">
-            <div id="nav-heading">Erin McCrea Art</div>
+            <div id="nav-heading"><NavLink to="/">Erin McCrea Art</NavLink></div>
             <ul className="vr-nav">
-                <li><a href="#a">Portfolio</a></li>
+                <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
                 <ul className="nav-sub-list">
-                <li><a href="#a">- Acrylic Paintings</a></li>
-                    <li><a href="#a">- Drawings</a></li>
+                    <li><NavLink to="/Portfolio/acrylic">- Acrylic Paintings</NavLink></li>
+                    <li><NavLink to="/Portfolio/drawings">- Drawings</NavLink></li>
                 </ul>
 
-                <li><a href="#a" className="active">Artist Statement</a></li>
-                <li><a href="#a">Comissions/Contact</a></li>
+                <li><NavLink to="/ArtistStatement">Artist Statement</NavLink></li>
+                <li><NavLink to="/Commissions">Commissions/Contact</NavLink></li>
             </ul>
         </div>
     );

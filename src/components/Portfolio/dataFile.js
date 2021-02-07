@@ -1,7 +1,7 @@
 export const dataFile = [
     {
         name: "Brenda",
-        imgPath: "./Images/6.png",
+        imgPath: "./Images/6.jpg",
         description: "This is Brenda. Brenda is my magpie friend from work. Famous for terrorising the employees for their food. Sometimes she gives us bugs to swap for a human snack."
     },
     {

@@ -6,7 +6,7 @@ import Navbar from './components/NavBar/LeftNavbar.js';
 import Portfolio from './components/Portfolio/index.js'
 import ArtistStatement from './components/ArtistStatement/index.js'
 import Commissions from './components/Commissions/index.js'
-import PrintShopPage from './components/Commissions/index.js';
+import PrintShopPage from './components/PrintShop/index.js';
 
 function App() {
   return (
@@ -16,17 +16,17 @@ function App() {
       {/* Keeps content to the right of the nav bar */}
       <div className="vr-side">
         <Switch>
+          <Route path="/printShop/:id">
+            <PrintShopPage />
+          </Route>
+          <Route path="/portfolio/:type">
+            <Portfolio />
+          </Route>
           <Route path="/artistStatement">
             <ArtistStatement />
           </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-          <Route path="/comissions">
+          <Route path="/commissions">
             <Commissions />
-          </Route>
-          <Route path="/shop">
-            <PrintShopPage />
           </Route>
           <Route path='/'>
             <ArtistStatement />

@@ -1,7 +1,7 @@
 import "../../index.css";
 
 export default function ArtistStatement() {
-    const img = require(`../Portfolio/Images/6.png`).default;
+    const img = require(`../Portfolio/Images/6.jpg`).default;
 
     return (
         <div className="artistStatementPage">
