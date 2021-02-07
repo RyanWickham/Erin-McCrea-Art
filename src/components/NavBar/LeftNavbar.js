@@ -7,10 +7,10 @@ export default function LeftNavbar() {
         <div className="left-menu">
             <div id="nav-heading"><NavLink to="/">Erin McCrea Art</NavLink></div>
             <ul className="vr-nav">
-                <li><NavLink to="/Portfolio">Portfolio</NavLink></li>
+                <li><NavLink to="/Portfolio/acrylic">Portfolio</NavLink></li>
                 <ul className="nav-sub-list">
                     <li><NavLink to="/Portfolio/acrylic">- Acrylic Paintings</NavLink></li>
-                    <li><NavLink to="/Portfolio/drawings">- Drawings</NavLink></li>
+                    <li><NavLink to="/Portfolio/drawing">- Drawings</NavLink></li>
                 </ul>
 
                 <li><NavLink to="/ArtistStatement">Artist Statement</NavLink></li>

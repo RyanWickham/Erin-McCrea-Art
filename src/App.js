@@ -19,7 +19,7 @@ function App() {
           <Route path="/printShop/:id">
             <PrintShopPage />
           </Route>
-          <Route path="/portfolio/:type">
+          <Route path="/portfolio/:pageType">
             <Portfolio />
           </Route>
           <Route path="/artistStatement">
