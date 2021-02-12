@@ -1,7 +1,7 @@
 import "../../index.css";
 
 export default function ArtistStatement() {
-    const img = require(`../Portfolio/Images/6.jpg`).default;
+    const img = require(`../../Images/Erin-photo.jpg`).default;
 
     return (
         <div className="artistStatementPage">
@@ -10,7 +10,7 @@ export default function ArtistStatement() {
             {/* Split section in half -> left side photo, right side text */}
             <div className="pageSplitDiv">
                 <div className="page40WidthDiv artistStatementImgDiv">
-                    <img src={img} alt=""></img>
+                    <img src={img} alt="Portrait of Erin McCrea"></img>
                 </div>
 
                 <div className="page45WidthDiv artistStatementTextDiv">

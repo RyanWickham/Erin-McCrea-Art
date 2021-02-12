@@ -2,7 +2,8 @@ import "../../index.css";
 
 import {useParams} from 'react-router-dom'; 
 
-import {dataFile} from "./dataFile.js";
+//file that contains information about images
+import {dataFile} from "../../Images/imageData.js";
 
 import Item from "./PortfolioItem.js";
 export default function Portfolio() {
