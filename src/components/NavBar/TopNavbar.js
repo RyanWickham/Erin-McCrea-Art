@@ -1,7 +1,6 @@
 import '../../index.css';
 
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 import SideDrawer from './SideDrawer/SideDrawer.js';
