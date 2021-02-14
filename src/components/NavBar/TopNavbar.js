@@ -26,7 +26,7 @@ export default function TopNavbar(props) {
                         <SideDrawer show={sideDrawerOpen}/>
                         {sideDrawerOpen && <Backdrop click={backdropClickHandler}/>}
                     </div>
-                    <div className='nav-heading'><NavLink to="/">Erin McCrea Art</NavLink></div>
+                    <div className='nav-heading'>Erin McCrea Art</div>
             </nav>
         </header>
     )
