@@ -1,7 +1,10 @@
 import './App.css';
 
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/NavBar/LeftNavbar.js';
+import { useMediaQuery } from 'react-responsive'
+
+import LeftNavbar from './components/NavBar/LeftNavbar.js';
+import TopNavbar from './components/NavBar/TopNavbar.js';
 
 import Portfolio from './components/Portfolio/index.js'
 import ArtistStatement from './components/ArtistStatement/index.js'
@@ -9,12 +12,15 @@ import Commissions from './components/Commissions/index.js'
 import PrintShopPage from './components/PrintShop/index.js';
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 901px)' });
+  //const isTabletOrMobile = useMediaQuery({ query: '(max-width: 900px)' });
 
-      {/* Keeps content to the right of the nav bar */}
-      <div className="vr-side">
+  return (
+    <div className="App" style={{height: '100%'}}>
+      {/* If the screen is a big screen like desktop or tablet */}
+      { isDesktopOrLaptop ? loadDesktopView() : loadMobileView()}
+
+      <main className="vr-side">
         <Switch>
           <Route path="/printShop/:id">
             <PrintShopPage />
@@ -32,9 +38,25 @@ function App() {
             <ArtistStatement />
           </Route>
         </Switch>
-      </div>
+      </main>
     </div>
   );
 }
 
 export default App;
+
+const loadDesktopView = () => {
+  /* Keeps content to the right of the nav bar */
+  return (
+    <>
+      <LeftNavbar />
+    </>
+  )
+}
+const loadMobileView = () => {
+  return (
+    <>
+      <TopNavbar />
+    </>
+  )
+}

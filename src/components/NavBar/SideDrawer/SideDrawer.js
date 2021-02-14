@@ -1,14 +1,18 @@
-import '../../index.css';
+import '../../../index.css';
 
 import { NavLink, useLocation } from 'react-router-dom';
 
-export default function LeftNavbar() {
+export default function SideDrawer (props) {
     const { pathname } = useLocation();
 
-    return(
-        <nav className="left-menu">
-            <div className="nav-heading"><NavLink to="/">Erin McCrea Art</NavLink></div>
-            <ul className="vr-nav">
+    let drawerClasses = 'side-drawer';
+    if(props.show) {
+        drawerClasses = 'side-drawer open';
+    }
+
+    return (
+        <nav className={drawerClasses}>
+            <ul>
                 <li><NavLink to="/Portfolio/acrylic" isActive={() => ['/Portfolio/acrylic', '/Portfolio/drawing'].includes(pathname)}>Portfolio</NavLink></li>
                 <ul className="nav-sub-list">
                     <li><NavLink to="/Portfolio/acrylic">- Acrylic Paintings</NavLink></li>
@@ -20,4 +24,4 @@ export default function LeftNavbar() {
             </ul>
         </nav>
     );
-}
+};
