@@ -21,7 +21,7 @@ export default function ArtistStatement() {
                     <p>My medium of choice is often acrylic paints and pencils, as I feel these best capture the subjects that spark my curiosity. The living world around me is a muse for my creative works, referencing landscapes and wildlife in my art.</p>
                     <br />
 
-                    <i>Fell free to send me an email: <b><a href="mailto: ErinMcCreaArt@gmail.com">ErinMcCreaArt@gmail.com</a></b></i>
+                    <i>Feel free to send me an email: <b><a href="mailto: ErinMcCreaArt@gmail.com">ErinMcCreaArt@gmail.com</a></b></i>
                 </div>
             </div>
         </div>
