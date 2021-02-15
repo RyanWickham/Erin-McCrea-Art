@@ -207,7 +207,13 @@ code {
   font-weight: 300;
   font-size: 3.5em;
   text-align: left;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+}
+.pageSubHeading {
+  font-weight: 300;
+  font-size: 2.5em;
+  text-align: left;
+  padding-bottom: 1%;
 }
 @media only screen and (max-width: 900px) {
   .vr-side {
@@ -215,10 +221,14 @@ code {
     padding: auto;
   }
   .pageHeading {
-    font-weight: 300;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
-    padding: 5% 5%;
+    padding: 2% 5%;
+  }
+  .pageSubHeading {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 2% 5%;
   }
 }
 
@@ -412,4 +422,32 @@ code {
   font-weight: inherit;
   font-size: 0.5em;
   margin: 0 1%;
+}
+
+/* Commission Page */
+
+.CommissionsPage section p {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.CommissionsPage .neededInfoSection {
+  text-align: justify;
+}
+.CommissionsPage .neededInfoSection ul {
+  list-style-position: outside;
+  margin-left: 1.5%;
+}
+.CommissionsPage .neededInfoSection ul ul {
+  list-style-position: inside;
+  margin-left: 1%;
+}
+.CommissionsPage .neededInfoSection li {
+  margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 900px) {
+  .CommissionsPage section {
+    text-align: center;
+    margin: 2% 5%;
+  }
 }
