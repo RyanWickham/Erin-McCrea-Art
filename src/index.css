@@ -186,6 +186,22 @@ code {
   font-weight: 300;
 }
 
+.vr-nav .socialIconsDiv {
+  position: fixed;
+  bottom: 5%;
+  width: inherit;
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side-drawer .socialIconsDiv {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}
+
 .backdrop {
   width: 100%;
   height: 100%;

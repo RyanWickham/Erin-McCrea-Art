@@ -1,6 +1,7 @@
 import '../../../index.css';
 
 import { NavLink, useLocation } from 'react-router-dom';
+import SocialIcons from '../SocialIcons/SocialIcons.js';
 
 export default function SideDrawer (props) {
     const { pathname } = useLocation();
@@ -22,6 +23,8 @@ export default function SideDrawer (props) {
                 <li><NavLink to="/ArtistStatement" isActive={() => ['/ArtistStatement', '/'].includes(pathname)}>Artist Statement</NavLink></li>
                 <li><NavLink to="/Commissions">Commissions / Contact</NavLink></li>
             </ul>
+
+            <div className='socialIconsDiv'><SocialIcons /></div>
         </nav>
     );
 };
