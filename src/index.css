@@ -203,11 +203,23 @@ code {
 }
 
 /* Portfolio Page */
-#pageHeading {
+.pageHeading {
   font-weight: 300;
   font-size: 3.5em;
   text-align: left;
   padding-bottom: 5%;
+}
+@media only screen and (max-width: 900px) {
+  .vr-side {
+    margin-left: 0;
+    padding: auto;
+  }
+  .pageHeading {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    padding: 5% 5%;
+  }
 }
 
 .portfolioItem {
@@ -216,7 +228,7 @@ code {
   display: flex;
   flex-direction: row;
   background-color: #c4c4c4;
-  padding: 2%;
+  padding: 5% 2%;
   margin-bottom: 5%;
   justify-content: space-around;
   border-radius: 25px;
@@ -259,6 +271,19 @@ code {
   text-align: justify;
 }
 
+@media only screen and (max-width: 600px) {
+  .portfolioItem {
+    flex-direction: column;
+  }
+  .portfolioPhoto {
+    display: flex;
+    margin: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 80%;
+  }
+}
+
 /* Artist Statement Page */
 
 .pageSplitDiv {
@@ -281,6 +306,26 @@ code {
 }
 .artistStatementImgDiv img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pageSplitDiv {
+    flex-direction: column;
+  }
+  .page40WidthDiv {
+    width: 90%;
+  }
+  .page45WidthDiv {
+    width: 90%;
+  }
+  .artistStatementImgDiv {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+  }
+  .artistStatementImgDiv img {
+    width: 80%;
+  }
 }
 
 .artistStatementTextDiv {

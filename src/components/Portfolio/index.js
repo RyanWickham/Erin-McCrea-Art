@@ -13,7 +13,7 @@ export default function Portfolio() {
 
     return (
         <div className="portfolioPage">
-            <h1 id="pageHeading">{portfolioType}</h1>
+            <h1 className="pageHeading">{portfolioType}</h1>
 
             {/* Make a list of images that type is the same as pageType, then */}
             {/* Convert the list into Items components -> i is the current index for a unique key */}

@@ -5,7 +5,7 @@ export default function ArtistStatement() {
 
     return (
         <div className="artistStatementPage">
-            <h1 id="pageHeading">Hi, I'm Erin.<br />Nice to meet you! :)</h1>
+            <h1 className="pageHeading">Hi, I'm Erin.<br />Nice to meet you! :)</h1>
 
             {/* Split section in half -> left side photo, right side text */}
             <div className="pageSplitDiv">
