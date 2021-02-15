@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Switch, Route } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive'
+import { useMediaQuery } from 'react-responsive';
 
 import LeftNavbar from './components/NavBar/LeftNavbar.js';
 import TopNavbar from './components/NavBar/TopNavbar.js';

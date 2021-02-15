@@ -203,11 +203,19 @@ code {
 }
 
 /* Portfolio Page */
-#pageHeading {
+.pageHeading {
   font-weight: 300;
   font-size: 3.5em;
   text-align: left;
   padding-bottom: 5%;
+}
+@media only screen and (max-width: 900px) {
+  .pageHeading {
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    padding: 2% 5%;
+  }
 }
 
 .portfolioItem {
@@ -281,6 +289,26 @@ code {
 }
 .artistStatementImgDiv img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pageSplitDiv {
+    flex-direction: column;
+  }
+  .page40WidthDiv {
+    width: 90%;
+  }
+  .page45WidthDiv {
+    width: 90%;
+  }
+  .artistStatementImgDiv {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+  }
+  .artistStatementImgDiv img {
+    width: 80%;
+  }
 }
 
 .artistStatementTextDiv {
