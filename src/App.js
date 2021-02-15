@@ -20,22 +20,22 @@ function App() {
       {/* If the screen is a big screen like desktop or tablet set nevigation bar correctly */}
       { isDesktopOrLaptop ? <LeftNavbar /> : <TopNavbar />}
 
-      <main className={isDesktopOrLaptop ? "vr-side" : ""}>
+      <main className="vr-side">
         <Switch>
           <Route path="/printShop/:id">
-            <PrintShopPage desktopDisplay={isDesktopOrLaptop} />
+            <PrintShopPage />
           </Route>
           <Route path="/portfolio/:pageType">
-            <Portfolio desktopDisplay={isDesktopOrLaptop} />
+            <Portfolio />
           </Route>
           <Route path="/artistStatement">
-            <ArtistStatement desktopDisplay={isDesktopOrLaptop} />
+            <ArtistStatement />
           </Route>
           <Route path="/commissions">
-            <Commissions desktopDisplay={isDesktopOrLaptop} />
+            <Commissions />
           </Route>
           <Route path='/'>
-            <ArtistStatement desktopDisplay={isDesktopOrLaptop} />
+            <ArtistStatement />
           </Route>
         </Switch>
       </main>
