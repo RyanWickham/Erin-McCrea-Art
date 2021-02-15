@@ -3,10 +3,10 @@ import "../../index.css";
 export default function ArtistStatement() {
     return (
         <div className="CommissionsPage">
-            <h1 id="pageHeading">Commissions</h1>
+            <h1 className="pageHeading">Commissions</h1>
 
             {/* Main text to describe the process */}
-            <section>
+            <section className='mainSection'>
                 <p>Commissions are available by request. If you are interested in a commissioned piece, please contact me via email. 
                     At the bottom of the page are some standard commission sizing and prices. If you are after a custom size, multiple 
                     subjects (more than 2) or still life/landscape artwork, please contact me via email to discuss your needs and a 
@@ -22,8 +22,8 @@ export default function ArtistStatement() {
             </section>
 
             {/* Dot points of things to include in email */}
-            <section>
-                <h2>Information Needed</h2>
+            <section className='neededInfoSection'>
+                <h2 className='pageSubHeading'>Information Needed</h2>
                 <ul>
                     <li>What media you would like the artwork in. Currently offered is graphite on fine art paper or acrylic on canvas.</li>
                     <li>What size would you like the artwork?</li>
