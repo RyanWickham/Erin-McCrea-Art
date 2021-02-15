@@ -17,25 +17,25 @@ function App() {
 
   return (
     <div className="App" style={{height: '100%'}}>
-      {/* If the screen is a big screen like desktop or tablet */}
-      { isDesktopOrLaptop ? loadDesktopView() : loadMobileView()}
+      {/* If the screen is a big screen like desktop or tablet set nevigation bar correctly */}
+      { isDesktopOrLaptop ? <LeftNavbar /> : <TopNavbar />}
 
-      <main className="vr-side">
+      <main className={isDesktopOrLaptop ? "vr-side" : ""}>
         <Switch>
           <Route path="/printShop/:id">
-            <PrintShopPage />
+            <PrintShopPage desktopDisplay={isDesktopOrLaptop} />
           </Route>
           <Route path="/portfolio/:pageType">
-            <Portfolio />
+            <Portfolio desktopDisplay={isDesktopOrLaptop} />
           </Route>
           <Route path="/artistStatement">
-            <ArtistStatement />
+            <ArtistStatement desktopDisplay={isDesktopOrLaptop} />
           </Route>
           <Route path="/commissions">
-            <Commissions />
+            <Commissions desktopDisplay={isDesktopOrLaptop} />
           </Route>
           <Route path='/'>
-            <ArtistStatement />
+            <ArtistStatement desktopDisplay={isDesktopOrLaptop} />
           </Route>
         </Switch>
       </main>
@@ -44,19 +44,3 @@ function App() {
 }
 
 export default App;
-
-const loadDesktopView = () => {
-  /* Keeps content to the right of the nav bar */
-  return (
-    <>
-      <LeftNavbar />
-    </>
-  )
-}
-const loadMobileView = () => {
-  return (
-    <>
-      <TopNavbar />
-    </>
-  )
-}
