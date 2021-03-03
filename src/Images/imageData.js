@@ -1,12 +1,5 @@
 export const dataFile = [
     {
-        name: "Eastern Rosella",
-        imageFileName: "bird1",
-        fileType: "jpg",
-        description: "24 x 24” Acrylic on Canvas",
-        type: "acrylic"
-    },
-    {
         name: "Kookaburra",
         imageFileName: "bird2",
         fileType: "jpg",
@@ -67,6 +60,13 @@ export const dataFile = [
         imageFileName: "bird8",
         fileType: "jpg",
         description: "20 x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Eastern Rosella",
+        imageFileName: "bird1",
+        fileType: "jpg",
+        description: "24 x 24” Acrylic on Canvas",
         type: "acrylic"
     },
 ]
