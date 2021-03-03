@@ -1,30 +1,72 @@
 export const dataFile = [
     {
-        name: "Brenda",
-        imageFileName: "6",
+        name: "Eastern Rosella",
+        imageFileName: "bird1",
         fileType: "jpg",
-        description: "This is Brenda. Brenda is my magpie friend from work. Famous for terrorising the employees for their food. Sometimes she gives us bugs to swap for a human snack.",
-        type: "drawing"
-    },
-    {
-        name: "Wedge Tailed Eagle",
-        imageFileName: "5",
-        fileType: "jpg",
-        description: "This is my completed wedge tailed eagle. I really love working with browns. There is so much more to brown then you think. This guy has so much warm undertones and depth to his feathering. This one was a lot of fun",
-        type: "drawing"
-    },
-    {
-        name: "The Peregrine Falcon",
-        imageFileName: "8",
-        fileType: "jpg",
-        description: "The Peregrine Falcon. These guys are such incredible birds. They can reach speeds of 300mk/h when diving.",
-        type: "drawing"
-    },
-    {
-        name: "Train set",
-        imageFileName: "1",
-        fileType: "jpg",
-        description: "Test descript for acrylic, train set goes choo chooo chooooooo!!",
+        description: "24 x 24” Acrylic on Canvas",
         type: "acrylic"
-    }
+    },
+    {
+        name: "Kookaburra",
+        imageFileName: "bird2",
+        fileType: "jpg",
+        description: "20 x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Black Swan",
+        imageFileName: "bird3",
+        fileType: "jpg",
+        description: "15 x 30” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Sulfur Crested Cockatoo",
+        imageFileName: "bird4",
+        fileType: "jpg",
+        description: "12 x 16” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Sea Lion",
+        imageFileName: "seal",
+        fileType: "jpg",
+        description: "14 x 18” Acryoic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Gum Blossom",
+        imageFileName: "plant",
+        fileType: "jpg",
+        description: "20x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Rainbow Lorikeets",
+        imageFileName: "bird5",
+        fileType: "jpg",
+        description: "20 x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Wedge-Tailed Eagle",
+        imageFileName: "bird6",
+        fileType: "jpg",
+        description: "24 x 36” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Magpie",
+        imageFileName: "brenda",
+        fileType: "jpg",
+        description: "20 x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
+    {
+        name: "Peregrine Falcon",
+        imageFileName: "bird8",
+        fileType: "jpg",
+        description: "20 x 24” Acrylic on Canvas",
+        type: "acrylic"
+    },
 ]

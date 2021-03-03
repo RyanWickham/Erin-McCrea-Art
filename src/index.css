@@ -195,6 +195,9 @@ code {
   display: flex;
   justify-content: space-around;
 }
+.socialIcons img:hover {
+  cursor: pointer;
+}
 
 .side-drawer .socialIconsDiv {
   position: fixed;
@@ -231,6 +234,13 @@ code {
   text-align: left;
   padding-bottom: 1%;
 }
+
+.portfolio-noImage-p {
+  font-weight: 300;
+  font-size: 1.5em;
+  text-align: left;
+}
+
 @media only screen and (max-width: 900px) {
   .vr-side {
     margin-left: 0;
@@ -239,12 +249,18 @@ code {
   .pageHeading {
     font-size: 3.5em;
     text-align: center;
-    padding: 2% 5%;
+    padding: 2% 5% 5% 5%;
   }
   .pageSubHeading {
     font-size: 2.5em;
     text-align: center;
     padding: 2% 5%;
+  }
+
+  .portfolio-noImage-p {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
   }
 }
 
