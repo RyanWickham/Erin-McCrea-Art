@@ -68,5 +68,5 @@ export const dataFile = [
         fileType: "jpg",
         description: "24 x 24” Acrylic on Canvas",
         type: "acrylic"
-    },
+    },g
 ]
